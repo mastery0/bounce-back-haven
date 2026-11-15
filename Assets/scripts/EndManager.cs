@@ -62,7 +62,7 @@ public class EndManager : MonoBehaviour
 
     }
 
-    private void Win()
+    public void Win()
     {
         win = true;
         if (panel != null)
