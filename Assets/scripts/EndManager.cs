@@ -27,11 +27,14 @@ public class EndManager : MonoBehaviour
 
     IEnumerator Start()
     {
+        Time.timeScale = 1f;
         if (generator == null || playerCollider == null)
         {
             Debug.Log("non collegati");
             yield break;
         }
+        playerRb=playerCollider.attachedRigidbody;
+        spawnPosition = playerCollider.transform.position;
         if(panel!=null)panel.SetActive(false);
         if (panelOver != panel) panel.SetActive(false);
         yield return null;
