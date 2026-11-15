@@ -672,7 +672,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.0155264735, y: 0.13585794}
+  m_Offset: {x: 0.0155264735, y: -0.047133863}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -682,7 +682,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23919594, y: 0.8369708}
+  m_Size: {x: 0.23919594, y: 1.2029544}
   m_EdgeRadius: 0
 --- !u!4 &331883642
 Transform:
@@ -839,7 +839,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene
+          m_StringArgument: GameScene1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &502931311
@@ -3130,6 +3130,8 @@ GameObject:
   - component: {fileID: 1206602598}
   - component: {fileID: 1206602597}
   - component: {fileID: 1206602596}
+  - component: {fileID: 1206602603}
+  - component: {fileID: 1206602602}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3226,8 +3228,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.21133333}
-  m_Size: {x: 1, y: 1}
+  m_Offset: {x: -0.008713961, y: -0.20693302}
+  m_Size: {x: 0.70372725, y: 1.6273975}
   m_Direction: 0
 --- !u!50 &1206602599
 Rigidbody2D:
@@ -3305,7 +3307,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -613047529, guid: 1408db216f8959f429a8a4df2d0088fd, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3332,6 +3334,44 @@ Transform:
   - {fileID: 1380105193}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1206602602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206602595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e8fd5b4a5baf64999e26ef78f92838, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAnimator
+  rb: {fileID: 0}
+  controller: {fileID: 0}
+  spriteRenderer: {fileID: 0}
+  moveThreshold: 0.1
+--- !u!95 &1206602603
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1206602595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3bda191a31cd2b048829f3cc0b382325, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1235980233
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,7 +3398,7 @@ Transform:
   m_GameObject: {fileID: 1235980233}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.45, z: 0}
+  m_LocalPosition: {x: 0, y: -0.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3684,7 +3724,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.22513583, y: 0.11644983}
+  m_Offset: {x: 0.22513583, y: -0.022973001}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3694,7 +3734,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.23919612, y: 0.82920766}
+  m_Size: {x: 0.23919612, y: 1.1080533}
   m_EdgeRadius: 0
 --- !u!1 &1522675604
 GameObject:
