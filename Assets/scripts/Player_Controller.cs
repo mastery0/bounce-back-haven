@@ -29,14 +29,28 @@ public class Player_Controller : MonoBehaviour
     private bool isTouchingWall;
     private bool isWallSliding;
 
+    public bool IsGrounded => isGrounded;
+    public bool IsTouchingWall => isTouchingWall;
+    public bool IsWallSliding => isWallSliding;
+
     private int wallJumpDirection;
     private float wallJumpTimer;
 
     void Awake()
     {
-        Inputs = new();
+        Inputs = new Player_Controls();
+    }
+
+    void OnEnable()
+    {
         Inputs.Enable();
         Inputs.Player.Jump.performed += ctx => OnJump();
+    }
+
+    void OnDisable()
+    {
+        Inputs.Player.Jump.performed += ctx =>OnJump();
+        Inputs.Disable();
     }
 
     void Start()
