@@ -13,8 +13,6 @@ public class Player_Controller : MonoBehaviour
     private Vector2 movement;
     private bool isGrounded=true;
 
-    private bool wallSliding;
-    private float wallSlideSpeed=2f;
 
     void Awake()
     {
@@ -59,13 +57,6 @@ public class Player_Controller : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isGrounded=true;
-        }
-    }
-    void WallSlide()
-    {
-        if(wallSliding)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, Mathf.Clamp(rb.linearVelocity.y, -wallSlideSpeed, float.MaxValue));
         }
     }
 }
