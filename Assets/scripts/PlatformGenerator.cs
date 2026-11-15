@@ -280,5 +280,5 @@ public class PlatformGenerator : MonoBehaviour
     }
 
     return true;
-}
+    }
 }

@@ -38,7 +38,7 @@ public class Player_Controller : MonoBehaviour
 
     void FixedUpdate()
     {
- OnMove();
+        OnMove();
         rb.linearVelocity=new Vector2(
             movement.x*speed,
             rb.linearVelocity.y
