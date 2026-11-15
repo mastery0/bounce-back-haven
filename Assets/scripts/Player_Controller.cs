@@ -40,13 +40,23 @@ public class Player_Controller : MonoBehaviour
     void OnEnable()
     {
         Inputs.Enable();
-        Inputs.Player.Jump.performed += ctx => OnJump();
+        Inputs.Player.Jump.performed += OnJumpInput;
     }
 
     void OnDisable()
     {
-        Inputs.Player.Jump.performed += ctx =>OnJump();
+        Inputs.Player.Jump.performed -= OnJumpInput;
         Inputs.Disable();
+    }
+
+    void OnDestroy()
+    {
+        Inputs.Dispose();
+    }
+
+    void OnJumpInput(InputAction.CallbackContext ctx)
+    {
+        OnJump();
     }
 
     void Start()
