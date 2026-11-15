@@ -108,6 +108,6 @@ public class EndManager : MonoBehaviour
     public void mainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("nome");//mettere nome dellla scena iniziale
+        SceneManager.LoadScene("MainMenu");//mettere nome dellla scena iniziale
     }
 }
