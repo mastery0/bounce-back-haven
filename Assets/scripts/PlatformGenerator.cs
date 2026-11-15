@@ -10,6 +10,7 @@ public class PlatformGenerator : MonoBehaviour
     public Transform startPlatform;
     public Transform generatedParent;
     public float lastPlatformY = 0f;
+    public Bounds lastBounds => currentBounds;
 
     [Header("Generation")]
     public int platformsToGenerate = 30;

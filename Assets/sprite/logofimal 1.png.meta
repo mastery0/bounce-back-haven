@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 3c8822f9083285a4899316d482e7d1f5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3507230701777160400
+    second: logofimal 1_0
+  - first:
+      213: 2177326132319994946
+    second: logofimal 1_1
+  - first:
+      213: 3641595379804335661
+    second: logofimal 1_2
+  - first:
+      213: -1441130769575548692
+    second: logofimal 1_3
+  - first:
+      213: -2464955840406132082
+    second: logofimal 1_4
+  - first:
+      213: -1753499080230316714
+    second: logofimal 1_5
+  - first:
+      213: -8562605550643187909
+    second: logofimal 1_6
+  - first:
+      213: -4709833807970496371
+    second: logofimal 1_7
+  - first:
+      213: -8697184841965559306
+    second: logofimal 1_8
+  - first:
+      213: 1827802085818845650
+    second: logofimal 1_9
+  - first:
+      213: 5928925542750044927
+    second: logofimal 1_10
+  - first:
+      213: -4149523711501702957
+    second: logofimal 1_11
+  - first:
+      213: 1401045914634158326
+    second: logofimal 1_12
+  - first:
+      213: -1907029162320463200
+    second: logofimal 1_13
+  - first:
+      213: -4781964635329108530
+    second: logofimal 1_14
+  - first:
+      213: -5794850380543819580
+    second: logofimal 1_15
+  - first:
+      213: -4972320925918923945
+    second: logofimal 1_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logofimal 1_0
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1252
+        width: 296
+        height: 464
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0377a334240d35fc0800000000000000
+      internalID: -3507230701777160400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_1
+      rect:
+        serializedVersion: 2
+        x: 665
+        y: 1264
+        width: 146
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 244cb15d49a673e10800000000000000
+      internalID: 2177326132319994946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_2
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 1262
+        width: 281
+        height: 345
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2ee0f434bb898230800000000000000
+      internalID: 3641595379804335661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_3
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 1257
+        width: 245
+        height: 356
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce860945333100ce0800000000000000
+      internalID: -1441130769575548692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_4
+      rect:
+        serializedVersion: 2
+        x: 1386
+        y: 1264
+        width: 259
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a619919b7bacdd0800000000000000
+      internalID: -2464955840406132082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_5
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 772
+        width: 285
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655d5e080e15aa7e0800000000000000
+      internalID: -1753499080230316714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 755
+        width: 563
+        height: 450
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3fef1a4e938b2980800000000000000
+      internalID: -8562605550643187909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_7
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 765
+        width: 266
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d801bccfa1f43aeb0800000000000000
+      internalID: -4709833807970496371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_8
+      rect:
+        serializedVersion: 2
+        x: 1411
+        y: 774
+        width: 146
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f12bb447746d4780800000000000000
+      internalID: -8697184841965559306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_9
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 756
+        width: 248
+        height: 370
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d943fc1058ad5910800000000000000
+      internalID: 1827802085818845650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_10
+      rect:
+        serializedVersion: 2
+        x: 266
+        y: 166
+        width: 258
+        height: 360
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff24b5b4e56c74250800000000000000
+      internalID: 5928925542750044927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_11
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 167
+        width: 167
+        height: 425
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d861e46b2ee966c0800000000000000
+      internalID: -4149523711501702957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_12
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 159
+        width: 289
+        height: 344
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f008c716d3817310800000000000000
+      internalID: 1401045914634158326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_13
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 158
+        width: 256
+        height: 456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aaf39ba41fd885e0800000000000000
+      internalID: -1907029162320463200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_14
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 502
+        width: 121
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec56ab6008c03adb0800000000000000
+      internalID: -4781964635329108530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_15
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 157
+        width: 266
+        height: 364
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c00625084e849fa0800000000000000
+      internalID: -5794850380543819580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logofimal 1_16
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 167
+        width: 146
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7537c5d5674cefab0800000000000000
+      internalID: -4972320925918923945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      logofimal 1_0: -3507230701777160400
+      logofimal 1_1: 2177326132319994946
+      logofimal 1_10: 5928925542750044927
+      logofimal 1_11: -4149523711501702957
+      logofimal 1_12: 1401045914634158326
+      logofimal 1_13: -1907029162320463200
+      logofimal 1_14: -4781964635329108530
+      logofimal 1_15: -5794850380543819580
+      logofimal 1_16: -4972320925918923945
+      logofimal 1_2: 3641595379804335661
+      logofimal 1_3: -1441130769575548692
+      logofimal 1_4: -2464955840406132082
+      logofimal 1_5: -1753499080230316714
+      logofimal 1_6: -8562605550643187909
+      logofimal 1_7: -4709833807970496371
+      logofimal 1_8: -8697184841965559306
+      logofimal 1_9: 1827802085818845650
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
