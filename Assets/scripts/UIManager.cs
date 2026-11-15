@@ -8,9 +8,14 @@ public class UIManager : MonoBehaviour
     public Image altimeterFillImage;
     public int altitude = 0;    
     public float altitudeFloat = 0f;
-    public int objectiveAltitude = 100;
+    public float objectiveAltitude;
     public GameObject player;
 
+    void Start()
+    {
+        objectiveAltitude = PlatformGenerator.Instance.lastPlatformY;
+        Debug.Log("Objective Altitude: " + objectiveAltitude);
+    }
     void Update()
     {
         altimeterText.text = "Altitude: " + Mathf.RoundToInt(player.transform.position.y).ToString() + "m";

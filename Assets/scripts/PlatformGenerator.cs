@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PlatformGenerator : MonoBehaviour
 {
+    public static PlatformGenerator Instance { get; private set; }
     [Header("Platform Prefabs")]
     public List<GameObject> platformPrefabs;
     public Transform startPlatform;
     public Transform generatedParent;
+    public float lastPlatformY = 0f;
 
     [Header("Generation")]
     public int platformsToGenerate = 30;
@@ -48,6 +50,17 @@ public class PlatformGenerator : MonoBehaviour
 
     private float PlayerHalfHeight => playerCollider.bounds.extents.y;
 
+    void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            Instance = this;
+        }
+    }
     void Start()
     {
         if (!ValidateSetup())
@@ -97,7 +110,7 @@ public class PlatformGenerator : MonoBehaviour
     {
         for (int i = 0; i < platformsToGenerate; i++)
         {
-            if (!GenerateNextPlatform())
+            if (!GenerateNextPlatform(i == platformsToGenerate - 1))
             {
                 Debug.LogWarning("Generation stopped at platform " + i);
                 break;
@@ -105,7 +118,7 @@ public class PlatformGenerator : MonoBehaviour
         }
     }
 
-    bool GenerateNextPlatform()
+    bool GenerateNextPlatform(bool lastGenerated = false)
     {
         // Random generation attempts
         for (int i = 0; i < maxAttempts; i++)
@@ -119,7 +132,8 @@ public class PlatformGenerator : MonoBehaviour
             float targetX = currentBounds.center.x + Random.Range(minHorizontalOffset,maxHorizontalOffset);
             targetX = Random.Range(-1,1) > 0 ? targetX : targetX*(-1);
 
-            if (TrySpawn(prefab, targetX, gap)) return true;
+            if (TrySpawn(prefab, targetX, gap,lastGenerated)) return true;
+            
         }
 
         // Fallback: try a safe platform directly above
@@ -128,14 +142,13 @@ public class PlatformGenerator : MonoBehaviour
         foreach (GameObject prefab in platformPrefabs)
         {
             if (prefab == null) continue;
-
-            if (TrySpawn(prefab,currentBounds.center.x,minVerticalGap)) return true;
+            if (TrySpawn(prefab,currentBounds.center.x,minVerticalGap,lastGenerated)) return true;
         }
 
         return false;
     }
 
-    bool TrySpawn(GameObject prefab,float targetX,float verticalGap)
+    bool TrySpawn(GameObject prefab,float targetX,float verticalGap,bool lastGenerated = false)
     {
         float targetBottom = currentBounds.max.y + verticalGap;
 
@@ -171,7 +184,7 @@ public class PlatformGenerator : MonoBehaviour
         }
         // Accept platform.
         currentBounds = bounds;
-
+        if (lastGenerated) lastPlatformY = currentBounds.max.y;
         return true;
     }
 
