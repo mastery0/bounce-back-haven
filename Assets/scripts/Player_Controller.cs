@@ -29,6 +29,10 @@ public class Player_Controller : MonoBehaviour
     private bool isTouchingWall;
     private bool isWallSliding;
 
+    public bool IsGrounded => isGrounded;
+    public bool IsTouchingWall => isTouchingWall;
+    public bool IsWallSliding => isWallSliding;
+
     private int wallJumpDirection;
     private float wallJumpTimer;
 
