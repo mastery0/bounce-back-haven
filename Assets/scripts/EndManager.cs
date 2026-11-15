@@ -1,8 +1,7 @@
 using UnityEngine;
-using System.Collections.Generic;
-using System;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 public class EndManager : MonoBehaviour
 {
     [Header("referenxe")]
@@ -10,12 +9,21 @@ public class EndManager : MonoBehaviour
     public Collider2D playerCollider;
     [Header("vittoria")]
     public string victory = "victory"; //nome della scena per futuro
-    public GameObject panel;  
+    public GameObject panel;
 
+    [Header("game over")]
+    public GameObject panelOver;
+    public float minY;
+    public bool relativeRespown = false;
+    public bool intantRespown = false;
+
+    private Rigidbody2D playerRb;
+    private Vector3 spawnPosition;
     public float heigh = 1f;
     private Bounds winZone;
     private bool ready;
     private bool win;
+    private bool ended = false;
 
     IEnumerator Start()
     {
@@ -25,6 +33,7 @@ public class EndManager : MonoBehaviour
             yield break;
         }
         if(panel!=null)panel.SetActive(false);
+        if (panelOver != panel) panel.SetActive(false);
         yield return null;
         Bounds last = generator.lastBounds;
         winZone = new Bounds(
@@ -37,7 +46,17 @@ public class EndManager : MonoBehaviour
     void Update()
     {
         if (!ready || win) return;
-        if (winZone.Intersects(playerCollider.bounds)) Win();
+        if (winZone.Intersects(playerCollider.bounds))
+        {
+            Win();
+            return;
+        }
+        if(playerCollider.transform.position.y<minY)
+        {
+            if (intantRespown) respown();
+            else gameOver();
+        }
+
     }
 
     private void Win()
@@ -48,6 +67,39 @@ public class EndManager : MonoBehaviour
             panel.SetActive(true);
             Time.timeScale = 0f;
         }
+
+    }
+
+    private void gameOver()
+    {
+        ended = true;
+        if (panelOver != null)
+        {
+            panelOver.SetActive(true);
+            Time.timeScale = 0f;
+        }
+        else respown();
+    }
+
+    private void respown()
+    {
+        Time.timeScale = 1f;
+        ended = false;
+        if (panelOver != null) panelOver.SetActive(false);
+        if(playerRb!=null)
+        {
+            playerRb.linearVelocity = Vector2.zero;
+            playerRb.angularVelocity = 0f;
+            playerRb.position = spawnPosition;
+        }
+        playerCollider.transform.position = spawnPosition;
+        Physics2D.SyncTransforms();
+    }
+
+    public void restart()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void mainMenu()
