@@ -441,6 +441,7 @@ MonoBehaviour:
   - {fileID: 8282379590984805675, guid: ec9af423cb30b4592a5042f0a68104dd, type: 3}
   startPlatform: {fileID: 2115218765}
   generatedParent: {fileID: 765717403}
+  lastPlatformY: 0
   platformsToGenerate: 30
   maxAttempts: 50
   playerRb: {fileID: 1535269850}
@@ -1009,6 +1010,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Player_Controller
   speed: 5
   jumpForce: 12
+  checks:
+  - {fileID: 38460259}
+  - {fileID: 160934184}
+  - {fileID: 1796147376}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  wallSlideSpeed: 2
+  wallJumpForceX: 8
+  wallJumpForceY: 8
+  wallJumpLockTime: 0.2
 --- !u!1 &1796147376
 GameObject:
   m_ObjectHideFlags: 0
